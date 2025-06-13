@@ -2,45 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Gaurav Deore | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gaurav's Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <h1>Gaurav Deore</h1>
-    <p>Aspiring Web Developer 💻</p>
+    <button onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
   </header>
 
-  <section id="about">
+  <section>
     <h2>About Me</h2>
-    <p>
-      Hi! I'm Gaurav, a passionate learner diving into full-stack web development.
-      I love building simple websites and learning new technologies every day.
-    </p>
+    <p>A passionate learner aiming to crack top companies!</p>
   </section>
 
-  <section id="skills">
+  <section>
     <h2>Skills</h2>
-    <ul>
-      <li>Python</li>
-      <li>MongoDB</li>
-      <li>MySQL</li>
-      <li>HTML5</li>
-      <li>CSS3</li>
+    <button onclick="toggleSkills()">Show/Hide Skills</button>
+    <ul id="skills-list">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
       <li>Git & GitHub</li>
-      <li>JavaScript (learning...)</li>
     </ul>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: gauravdeore.sae.it@gmail.com</p>
-    <p>Contact No: 8669865140</p>
+  <section>
+    <h2>Contact Me</h2>
+    <form onsubmit="return showAlert()">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <button type="submit">Submit</button>
+    </form>
   </section>
 
   <footer>
-    <p>© 2025 Gaurav Deore. All rights reserved.</p>
+    <p>© 2025 Gaurav Deore</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
